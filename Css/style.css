@@ -1,0 +1,37 @@
+/**header**/
+.site-header{
+    background-image: url(../Img/ba1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 750px;
+}
+
+/**Colores**/ 
+.color-header{
+  color:rgb(72, 75, 78);
+}
+.bg-custom {
+  background-color: rgb(72, 75, 78); 
+  color: #ffffff; 
+}
+
+.texto-header{
+  color: white;
+  margin-top: 10rem;
+  font-size: 1rem;
+}
+.site-header{
+  color: dimgray;
+  justify-content: none;
+}
+.footer-color {
+    background-color: blue; 
+    color: white; 
+    padding: 20px;
+}
+.footer{
+    color: white; /* Cambia el color de los enlaces a blanco */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    margin-right: 10px; /* Añade un margen derecho entre los enlaces (opcional) */
+}
