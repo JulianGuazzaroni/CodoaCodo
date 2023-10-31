@@ -51,3 +51,11 @@
 .sin-punto{
   list-style:none
 }
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+.border{
+  border-radius: 0% !important;
+}
