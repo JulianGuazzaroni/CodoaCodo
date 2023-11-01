@@ -15,16 +15,16 @@ function calcularTotal() {
 
     let precioTicket = 200; // Precio base del ticket
 
-    // Determinar el precio del ticket según la categoría
+    // Determinar el precio del ticket 
     switch (categoria) {
         case "1":
-            precioTicket = 40; // Estudiante
+            precioTicket = 40; 
             break;
         case "2":
-            precioTicket = 125; // Trainee
+            precioTicket = 125; 
             break;
         case "3":
-            precioTicket = 215; // Junior
+            precioTicket = 215; 
             break;
         default:
             alert("Categoría no válida");
@@ -40,6 +40,4 @@ function calcularTotal() {
     function borrarTotal() {
         document.getElementById("totalAPagar").textContent = "0";
     }
-
-    // Agregar un event listener al botón "Borrar"
     document.getElementById("borrarBtn").addEventListener("click", borrarTotal);
