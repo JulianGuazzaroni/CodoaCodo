@@ -5,16 +5,22 @@ function resumen(){
 }
 function enviarFormulario(e){
     e.preventDefault(); //evita que se envie el formulario al recargar la pagina
-    alert("formulario")
+
 }
+
 // Función para calcular el total a pagar
 function calcularTotal() {
+        borrarTotal();
     // Obtener la cantidad de tickets y la categoría seleccionada
-    const cantidadTickets = parseInt(document.getElementById("cantidadTickets").value);
-    const categoria = document.getElementById("select-categoria").value;
+    const cantidadTickets = parseInt(document.getElementById("cantidadTickets").value | 0); // <-- ese | 0, quiere decir que si lo primero no funciona, tome el 0
+ // Valido que haya tickets
+ if (cantidadTickets == null || cantidadTickets <= 0) {
+    alert("Debe ingresar la cantidad de tickets a comprar");
+  }
 
-    let precioTicket = 200; // Precio base del ticket
+  const categoria = document.getElementById("select-categoria").value;
 
+  let precioTicket = 200; // Precio base del ticket
     // Determinar el precio del ticket 
     switch (categoria) {
         case "1":
@@ -24,7 +30,7 @@ function calcularTotal() {
             precioTicket = 125; 
             break;
         case "3":
-            precioTicket = 215; 
+            precioTicket = 170; 
             break;
         default:
             alert("Categoría no válida");
